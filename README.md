@@ -17,7 +17,7 @@ This Python script serves as an integration between Linode's API and Slack, allo
 
         bashCopy code
 
-        `pip install requests slack-sdk`
+        `pip install requests slack-sdk schedule`
 
 ### Usage
 
@@ -25,6 +25,7 @@ This Python script serves as an integration between Linode's API and Slack, allo
 
     -   Replace the placeholder `SLACK_BOT_TOKEN` with your Slack Bot Token.
     -   Replace the placeholder `API_TOKEN` with your Linode API Token.
+    -   Adjust the example ticket URL (`ticket_url`) to match the actual URL structure used by your Linode support system.
 2.  Run the Script:
 
     -   Execute the script using a Python interpreter:
@@ -41,10 +42,16 @@ This Python script serves as an integration between Linode's API and Slack, allo
 4.  If there are no open tickets, it posts a message indicating that there are none.
 5.  The script handles cases where the Slack API token is invalid and prints appropriate error messages.
 
+### Scheduling
+
+-   The script is configured to execute the function immediately and then run every hour thereafter.
+-   The initial execution fetches and posts ticket information immediately.
+-   Subsequent executions occur every hour, ensuring up-to-date information is posted to the specified Slack channel.
+
 ### Notes
 
 -   Ensure that the Slack channel specified in `channel="#tickets"` exists in your workspace.
--   Adjust the example ticket URL (`ticket_url`) to match the actual URL structure used by your Linode support system.
+-   Adjust the example ticket URL (`ticket_url`) to match the actual URL structure for your Linode support system.
 
 ### Troubleshooting
 
