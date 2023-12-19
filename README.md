@@ -31,7 +31,6 @@ This Python script serves as an integration between Linode's API and Slack, allo
 
     -   Replace the placeholder `SLACK_BOT_TOKEN` with your Slack Bot Token.
     -   Replace the placeholder `API_TOKEN` with your Linode API Token.
-    -   Adjust the example ticket URL (`ticket_url`) to match the actual URL structure used by your Linode support system.
 2.  Run the Script:
 
     -   Execute the script using a Python interpreter:
