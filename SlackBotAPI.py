@@ -25,7 +25,7 @@ def fetch_and_post_tickets():
             for ticket in open_tickets:
                 ticket_id = ticket["id"]
                 ticket_status = ticket["status"]
-                ticket_url = f'https://example.com/tickets/{ticket_id}'  # Replace with the actual URL structure
+                ticket_url = f'https://cloud.linode.com/support/tickets/{ticket_id}'  # Replace with the actual URL structure
                 # Send a message to the #tickets channel for each open ticket
                 response = client.chat_postMessage(
                     channel="#tickets",
