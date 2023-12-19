@@ -3,6 +3,12 @@ Linode Slack Integration
 
 This Python script serves as an integration between Linode's API and Slack, allowing you to retrieve information about open support tickets and post updates to a specified Slack channel. The script uses the `requests` library to interact with the Linode API and the `slack_sdk` library to communicate with Slack.
 
+### SlackBot
+
+- Please keep in mind you will be required to have a slack bot. I set my personal slack bot up with the following guide below on my workspace.
+
+- [How to Build a Slackbot with Python | kubiya.ai](https://www.kubiya.ai/resource-post/how-to-build-a-slackbot-with-python)
+
 ### Prerequisites
 
 1.  Slack Bot Token:
@@ -51,7 +57,6 @@ This Python script serves as an integration between Linode's API and Slack, allo
 ### Notes
 
 -   Ensure that the Slack channel specified in `channel="#tickets"` exists in your workspace.
--   Adjust the example ticket URL (`ticket_url`) to match the actual URL structure for your Linode support system.
 
 ### Troubleshooting
 
